@@ -1,5 +1,0 @@
-# Codebook
-## Background
-List of Variables
-* SubjectID
-* Activity
