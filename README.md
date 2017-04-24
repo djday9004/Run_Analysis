@@ -26,9 +26,18 @@ As specified in the project assignment instructions, these are the project objec
 * Appropriately label the data set with descriptive variable names.
 * From the data set in the previous step, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 ## Analysis Plan and Procedures
-The analysis plan will include the following steps:
-
-
+The analysis plan includes the following steps:
+1. Create data frames in R for all of the above text data files using the read.table() function
+2. Add the appropriate column header titles to all resulting data frames
+3. For the data frames containing the test and training features data, subset only the columns ending in "mean()" or "std()" in order to meet the above requirement "Extract only the measurements on the mean and standard deviation for each measurement."
+4. Bind the test data (X_test, subject_test, and y_test) into a single test data frame using the cbind() function
+5. Bind the training data (X_train, subject_train, and y_train) into a single training data frame using the cbind() function
+6. Bind the test and training data frames into a single data frame using the rbind() function
+7. Merge the resulting single data frame with the activity_labels data frame to include the activity titles
+8. Remove the activityCode column from the data frame as it is no longer required
+9. Change the feature column titles to more meaningful names
+10. Melt the data frame and compute means for each feature column for each subject and activity
+The R commands to complete these steps are found in the Run_Analysis.R script file along with comments to provide details for each.
 ## Repository Contents
 This repository contains files that make up the solution to the Run Analysis project. Specifically, you will find:
 * Run_Analysis.R - an R script file containing all commands used to transform the data
