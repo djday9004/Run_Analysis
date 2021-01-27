@@ -1,4 +1,5 @@
 ## Run_Analysis.R
+## New Edit Line
 ## Constructed by Dennis Day in order to meet the requirements of the Data Science Specialization - Getting
 ## and Cleaning Data course end of course project.
 ## The Readme.md and Codebook.md files also found in my Run_Analysis Github repository provide further details on the experiment that
